@@ -38,3 +38,16 @@ function changeForm(number) {
       }
     }
        ) ;
+
+//        var divElemnts = document.getElementsByClassName('Maincontent');
+// var sliderIndex=0;
+
+// document.getElementsByClassName('slider')[0].addEventListener('click', function(event){
+//   divElemnts[sliderIndex].classList.remove('acitive');
+//   divElemnts[sliderIndex].classList.add('not-active');
+
+//   sliderIndex++;
+//   if(sliderIndex == divElemnts.length)sliderIndex=0;
+
+//   divElemnts[sliderIndex].classList.add('active');
+//   divElemnts[sliderIndex].classList.remove('not-active');
