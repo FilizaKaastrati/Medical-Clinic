@@ -37,14 +37,14 @@ $departments = Department::getAll();
                             <img src="'.$department['photo'].'" class="dep-img " alt=""/>
                             <p class="p-dr">'.$department["title"].'</p>
                             <p class="p-dep">'.$department["description"].'</p>
-                            <a href="/department.php?id='.$department["id"].'" class="p-dep purple-color"> >Read more</a>
+                            <a href="/medical-clinic/department.php?id='.$department["id"].'" class="p-dep purple-color"> >Read more</a>
                          </div>';
                 } else {
                     echo '<div class="post">
                             <img src="/photos/Orthopedics.png" class="dep-img " alt=""/>
                             <p class="p-dr">'.$department["title"].'</p>
                             <p class="p-dep">'.$department["description"].'</p>
-                            <a href="/department.php?id='.$department["id"].'" class="p-dep purple-color"> >Read more</a>
+                            <a href="/medical-clinic/department.php?id='.$department["id"].'" class="p-dep purple-color"> >Read more</a>
                          </div>';
                 }
 

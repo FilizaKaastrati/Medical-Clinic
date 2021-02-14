@@ -24,7 +24,7 @@
             <li><a onclick="document.getElementById('id01').style.display='block'" href="#" class="login-button"><i
                         class="fas fa-sign-in-alt"></i> Login</a></li>
         <?php } else { ?>
-            <li><a href="#"> <?php echo $_SESSION['name'] ?></a> * <a href="/logout.php">Log out</a> </li>
+            <li><a href="#"> <?php echo $_SESSION['name'] ?></a> * <a href="/medical-clinic/logout.php">Log out</a> </li>
         <?php } ?>
     </ul>
 
@@ -41,7 +41,7 @@
                 <button type="button" href="#" onclick="changeForm(1)">Register</button>
             </div>
             <div class="container forms form-style">
-                <form action="/login.php" method="post" >
+                <form action="/medical-clinic/login.php" method="post" >
                     <label><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="email" required>
 
@@ -61,7 +61,7 @@
                 </form>
             </div>
             <div class="register forms hidden">
-                <form  action="/register.php" method="post">
+                <form  action="/medical-clinic/register.php" method="post">
                     <label><b>Name</b></label>
                     <input type="text" placeholder="Enter name" name="name" required>
                     <label><b>Surname</b></label>
@@ -82,6 +82,6 @@
 
         </div>
     </div>
-    <script src="/javascript/login.js"></script>
+    <script src="/medical-clinic/javascript/login.js"></script>
 
 </div>

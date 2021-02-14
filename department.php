@@ -25,8 +25,8 @@ if (!$department) {
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/vendors/font-awsome/css/all.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./vendors/font-awsome/css/all.css"/>
 
 </head>
 
@@ -52,7 +52,7 @@ if (!$department) {
         <p class="about-medical">The best care</p>
         <p class="p-about-us"><?php echo $department['description']; ?> </p>
         <br>
-        <a href="/contact.php" class=" btnlink btn2">Book an Appointment</a>
+        <a href="/medical-clinic/contact.php" class=" btnlink btn2">Book an Appointment</a>
     </div>
 </div>
 <br>

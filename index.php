@@ -44,7 +44,7 @@ if (session_id() == '') {
     <div class="Appointment">
         <p> Schedule your appointment online</p>
 
-        <a href="html/contact.html" alt="About us" class="btnn btnlink">Book an Aoppointment</a>
+        <a href="/medical-clinic/contact.php" alt="About us" class="btnn btnlink">Book an Aoppointment</a>
     </div>
     <div class="Content">
         <p>Sign up for our newsletter</p>

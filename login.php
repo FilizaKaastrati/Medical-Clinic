@@ -20,5 +20,5 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         $_SESSION['role'] = $user['role'];
     }
 
-    header('Location: /');
+    header('Location: /medical-clinic');
 }

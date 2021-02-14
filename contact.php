@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['error'] = "Please fill all required fields!";
     }
 
-    header('Location: /contact.php');
+    header('Location: /medical-clinic/contact.php');
     exit();
 }
 $departments = Department::getAll();
@@ -77,7 +77,7 @@ $departments = Department::getAll();
         </div>
         <div class="contact-us-col">
             <div class="container">
-                <form method="POST" action="/contact.php">
+                <form method="POST" action="/medical-clinic/contact.php">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="name" placeholder="Your name.." required>
 
