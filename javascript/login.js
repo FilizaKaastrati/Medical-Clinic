@@ -51,3 +51,4 @@ function changeForm(number) {
 
 //   divElemnts[sliderIndex].classList.add('active');
 //   divElemnts[sliderIndex].classList.remove('not-active');
+

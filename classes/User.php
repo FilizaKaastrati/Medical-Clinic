@@ -104,7 +104,7 @@ class User
         $role = $this->getRole();
         $password = $this->getPassword();
         $sql = "UPDATE users
-                SET name='$name', surname='$surname', email='$email', user_role='$role', password='$password'
+                SET name='$name', surname='$surname', email='$email', user_role='$role'
                 WHERE id='$id'";
         if ($conn->query($sql) === TRUE) {
             $sql = $conn->query("SELECT * FROM users WHERE id = '$id'");

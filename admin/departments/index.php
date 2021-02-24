@@ -6,11 +6,11 @@ if (session_id() == '') {
     session_start();
 }
 if ($_SERVER['REQUEST_METHOD'] === 'GET' ) {
-    if (isset($_GET['id']) && $_GET['action'] == 'delete') {
+    if (isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] == 'delete') {
         $id = $_GET['id'];
         Department::deleteById($id);
         $_SESSION['admin_message'] = 'Deleted!';
-        header("Location: /medical-clinic/admin/about");
+        header("Location: /medical-clinic/admin/departments" );
         exit();
     }
 }

@@ -205,23 +205,24 @@ span.psw {
 }
 #Maincontent {
   width: 100%;
-  height: 758px;
+  /* height: 758px; */
   padding: 0;
   margin: 0;
 }
 #Maincontent img {
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 #Maincontent {
-  position: relative;
+  padding-top: 10px;
+  /* position: relative;
   flex-grow: 1;
   width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .Appointment p {
   padding-bottom: 10px;
@@ -239,35 +240,50 @@ span.psw {
   font-size: large;
   color: white;
 }
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  bottom: 300px;
-  flex-direction: column;
-  width: 17%;
-  height: 33vh;
-  position:relative;
-  align-items:flex-start;
-  color: whitesmoke;
-  padding: 10px;
-  justify-content: space-around;
-  background-color:rgb(116,204,170);
- 
- 
+.boxes-wrap{
+  position: absolute;
+  width: 100%;
+  top: 35%;
 }
-.boxes a {
+.boxes {
+  /* position: absolute; */
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+
+  background-color:rgb(116,204,170);
+  color: whitesmoke;
+  margin: 15px;
+  width: 33%;
+  padding: 10px 20px;
+  border-radius: 15px;
+
+}
+
+.box h4{
+  margin-bottom: 10px;
+}
+
+.box p{
+  margin-bottom: 10px;
+}
+
+ .box a {
   border-radius: 1px;
   text-decoration: none;
   color: whitesmoke;
   text-align: start;
 
 
-}
-.boxes:nth-child(3){
+} 
+.box:nth-child(2){
   background-color:rgb(30,174,110);
 }
-.boxes:last-child{
-  
+.box:last-child{
   background-color:rgb(31,129,86);
 }
 
@@ -474,7 +490,7 @@ span.psw {
 .dep-img {
   margin-top: 40px;
   padding: 20px;
-  height: 30vh;
+  height: 39vh;
 }
 .p-dep {
   color: black;
@@ -542,16 +558,24 @@ span.psw {
 
 
 @media only screen and (max-width:2560px){
-  .boxes {
+  /* .boxes {
     flex-direction: row;
     width: 14%;
     height: 26vh;
-}
+} */
 }
 
 @media only screen and (max-width:500px){
+  .boxes {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  .box:nth-child(3) {
+    display: none;
+  }
   .aboutus-img {
-  height: 100px;
+    height: 100px;
   }
   .p-about-us{
   font-size: 10px;
@@ -563,7 +587,7 @@ span.psw {
   .header {
     padding-right: 0px;
     font-size: 19px;
-}
+  }
 
 li a {
     color: black;
@@ -572,10 +596,10 @@ li a {
     font-size: 9px;
 }
 
-.boxes {
+/* .boxes {
   width: 26%;
   height: 65vh;
-}
+} */
 
 .Appointment p {
   padding-top: 0px;
@@ -614,5 +638,98 @@ li a {
     font-size: 18px;}
 }
 
+* {box-sizing:border-box}
 
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  /* margin: auto; */
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 3;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
